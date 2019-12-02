@@ -33,3 +33,6 @@ def hangman(word):
                      print(" ".join(board))
                      win = True
                      break
+                 if not win:
+                     print("\n".join(stages[0: wrong]))
+                     print("You lose! It was {}.".format(word))
